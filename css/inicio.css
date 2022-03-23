@@ -1,0 +1,199 @@
+/**::selection{
+    color:#F09465;
+    background:snow;
+}*/
+
+.container{/*orden de los elementos*/
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "header" 
+    "uno" 
+    "dos"       
+    ;
+}
+#titulo{
+    position: absolute;
+    float: left;
+    left: 225px;
+    bottom: 400px;
+    font-size: 50px;
+}
+#header{
+    grid-area: header;
+    background-color: #3F1AA3;
+    /*border: solid red;*/
+}
+/*Logo de la empresa*/
+.logo{/*contenedor del logo*/
+    position: relative;
+    left: -40px;
+    float: left;
+}
+/*tamaño del logo*/
+.logo img{
+    height: 150px;
+     width: 225px;    
+}
+/*menu*/
+.menu{/*contenedor del menu*/
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    top: 139px;    
+}
+.navegar{
+    width: 70%;
+    float: right;
+}
+.menulist{/*estilo de las listas del menu*/
+    list-style: none;
+    background-color: #F09D48;
+}
+.option{/*Forma del menu*/
+    display:inline-block;
+    font-size: 27px;
+    padding: 0px 20px;
+    z-index:50;
+    border-right:solid #000;
+}
+#uno{
+    grid-area: uno;
+    /*border: solid red;*/
+}
+/*articulo razon de ser*/
+.razon{/*estilo del texto*/
+    
+}
+.razon h2{
+    position: relative;
+    margin: 40px;
+    bottom: 20px;
+    font-size: 30px;
+}
+.razonimg{/*contenedor de la imagen*/
+    position: relative;
+    float: right;
+    left: 40px;
+    bottom:140px;
+}
+.razonimg img{/*estilo de la imagen*/
+    height:300px; 
+    width:500px;
+}
+.texto{
+    position: relative;
+    bottom: 400px;
+    padding: 40px;
+    float: left;
+    font-size:20px;
+    width: 65%;
+    text-align: justify;
+}
+.dos{
+    position:relative;
+    grid-area: dos;
+    /*border: solid red;*/
+    bottom: 300px;
+}
+.ubicacion{
+    position: relative;
+    float: left;
+}
+.contacto{
+    position: relative;
+    float: center;
+    left: 20px;
+    text-align: justify;
+}
+.directorio{
+    grid-area:directorio;
+    position: relative;
+    float: right;
+    right: 40px;
+    bottom:300px;
+}
+/*Esconder el icono menu*/
+.btn-menu{
+    display: none;
+}
+.navegar{
+   top: 2000px;
+}
+/*Estilo del Menu*/
+.navegar a{
+    color:#000;
+    font-style: none;
+    text-decoration: none;
+}
+/*cursar sobre el menu*/
+.menu a:hover{
+    color:snow;
+}
+.pie{
+    background-color: #F5A962;
+    position: relative;   
+}
+.pie img{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    float: right;
+    right: 40px;
+}
+body{
+    background-color: lightgray;
+    text-align: justify;
+    display:inline-block;   
+    background-color: #2AA835;
+
+}
+/*responsive*/
+/*@media only screen and (max-width:590px){
+  #btnmenu{
+      display:none;
+  } 
+ .option:not(.btn-menu){
+     display:none;
+     background:#fff;
+     text-align: center;
+     border:solid #000;
+     margin-top:2px;
+ }
+ .btn-menu{
+     display:block;
+ }
+ .btn-menu i:hover{
+     cursor: pointer;
+ }
+ .option a:hover{
+     color: #f00;
+ }
+ .menu li:hover:not(.btn-menu){
+    background: rgba(209, 188, 183, 0.3)
+ }
+ .btn-menu a{
+    padding-right:20px;
+    border-right: solid #000;
+ }
+ #btnmenu:checked ~ .option:not(.btn-menu){
+     margin:0px;
+     background:red;
+ }
+}
+@media only screen and (max-width:550px){
+#Titulo-pagina{
+    font-size: 50px;
+    margin:30px;
+}
+#header{
+    position:sticky;
+    top:0px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin:-60px;
+    top:-50px;
+}
+}*/
