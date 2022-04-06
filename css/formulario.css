@@ -1,0 +1,232 @@
+
+.container{/*orden de los elementos*/
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "header" 
+      "uno" 
+      "dos"       
+      ;
+  }
+  #header{
+      grid-area: header;
+      background-image:url(../img/fondo_vs.png);
+      
+      
+  }
+  /*Logo de la empresa*/
+  .logo{/*contenedor del logo*/
+      position:relative; 
+      float:center;
+      left:450px;
+  }
+  /*tamaño del logo*/
+  .logo img{
+      height: 200px;    
+  }
+  .menulist{/*estilo de las listas del menu*/
+      list-style: none;
+      background-color: #6996D3;
+      opacity: 0.7;
+  }
+  .submenudo{
+      background-color: #6996D3;
+      list-style: none;
+      padding: 0px;
+      width:147px;;
+      text-align: center;
+      display:none;
+      position: absolute;
+      border-right:solid #000;
+      border-left: solid #000;
+      float:left;
+      left:548px;
+  }
+  .submenudo > li{
+      border-bottom: solid #000;
+  }
+  .menulist li:hover > ul {
+      display: block;
+      border-top: solid #000;
+  }
+  /*menu*/
+  .menu{/*contenedor del menu*/
+      position: relative;
+      width: 100%;
+      bottom: -16px; 
+      z-index: 51;  
+  }
+  .navegar{
+      width: 70%;
+      float: right;
+  }
+  .menulist{/*estilo de las listas del menu*/
+      list-style: none;
+      background-color: #6996D3;
+      opacity: 0.7;
+  }
+  .option{/*Forma del menu*/
+      display:inline-block;
+      font-size: 27px;
+      padding: 0px 20px;
+      z-index:50;
+      border-right:solid #000;
+  }
+  #uno{
+      grid-area: uno;
+      /*border: solid red;*/
+  }
+  /*articulo razon de ser*/
+  .razon{/*estilo del texto*/
+      
+  }
+  .razon h2{
+      position: relative;
+      margin: 40px;
+      bottom: 20px;
+      font-size: 30px;
+  }
+  .razonimg{/*contenedor de la imagen*/
+      position: relative;
+      top:100px;
+      text-align: center;
+  }
+  .razonimg img{/*estilo de la imagen*/
+      height:300px; 
+      width:500px;
+  }
+  .texto{
+      position: relative;
+      bottom: 400px;
+      padding: 40px;
+      float: left;
+      font-size:20px;
+      width: 100%;
+      text-align: justify;
+  }
+  /*FORMULARIO*/
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: #6996D3;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #F5A962;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+  .botons:hover{
+    background: #6996D3;
+  }
+  #uno{
+      position:relative;
+      grid-area: uno;
+      /*border: solid red;*/
+      top:705px;
+  }
+  .dos{
+      position:relative;
+      grid-area: dos;
+      /*border: solid red;*/
+      bottom: 300px;
+  }
+  .ubicacion{
+      position: relative;
+      float: left;
+  }
+  .contacto{
+      position: relative;
+      float: center;
+      left: 20px;
+      text-align: justify;
+  }
+  .directorio{
+      grid-area:directorio;
+      position: relative;
+      float: right;
+      right: 40px;
+      bottom:300px;
+  }
+  /*Esconder el icono menu*/
+  .btn-menu{
+      display: none;
+  }
+  .navegar{
+     top: 2000px;
+  }
+  /*Estilo del Menu*/
+  .navegar a{
+      color:#000;
+      font-style: none;
+      text-decoration: none;
+  }
+  /*cursar sobre el menu*/
+  .menu a:hover{
+      color:snow;
+  }
+  .pie{
+      background-color: #F5A962;
+      position: relative;   
+  }
+  .pie img{
+      position: relative;
+      width: 40px;
+      height: 40px;
+      float: right;
+      right: 40px;
+  }
+  body{
+      background-color: lightgray;
+      text-align: justify;
+      display:inline-block;   
+      background-color: #F5F5DC;
+      /*background-color: #FFFFF0;*/
+  
+  }
+.form-register {
+    position:relative;
+    grid-area: uno;
+    bottom:100px;
+    width: 400px;
+    background: #E6E6FA;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: #000000;
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .controls {
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #F5A962;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: #000;
+  }
+  

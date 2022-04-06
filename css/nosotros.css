@@ -6,7 +6,10 @@
   display: grid;
   gap: 20px;
   grid-template-areas:
-    "header" "dos";
+    "header" 
+    "uno" 
+    "dos"       
+    ;
 }
 /*#titulo{
     position: absolute;
@@ -30,16 +33,6 @@
 /*tamaño del logo*/
 .logo img{
     height: 200px;    
-}
-/*menu*/
-.menu{/*contenedor del menu*/
-    position: relative;
-    width: 100%;
-    bottom: -16px;   
-}
-.navegar{
-    width: 70%;
-    float: right;
 }
 .menulist{/*estilo de las listas del menu*/
     list-style: none;
@@ -66,6 +59,21 @@
     display: block;
     border-top: solid #000;
 }
+/*menu*/
+.menu{/*contenedor del menu*/
+    position: relative;
+    width: 100%;
+    bottom: -16px;   
+}
+.navegar{
+    width: 70%;
+    float: right;
+}
+.menulist{/*estilo de las listas del menu*/
+    list-style: none;
+    background-color: #6996D3;
+    opacity: 0.7;
+}
 .option{/*Forma del menu*/
     display:inline-block;
     font-size: 27px;
@@ -73,11 +81,49 @@
     z-index:50;
     border-right:solid #000;
 }
+#uno{
+    grid-area: uno;
+    /*border: solid red;*/
+}
+/*articulo razon de ser*/
+.razon{/*estilo del texto*/
+    
+}
+.razon h2{
+    position: relative;
+    margin: 40px;
+    bottom: 20px;
+    font-size: 30px;
+}
+.razonimg{/*contenedor de la imagen*/
+    position: relative;
+    top:100px;
+    text-align: center;
+}
+.razonimg img{/*estilo de la imagen*/
+    height:300px; 
+    width:500px;
+}
+.texto{
+    position: relative;
+    bottom: 400px;
+    padding: 40px;
+    float: left;
+    font-size:20px;
+    width: 100%;
+    text-align: justify;
+}
+#uno{
+    position:relative;
+    grid-area: uno;
+    /*border: solid red;*/
+    top:75px;
+}
 .dos{
     position:relative;
     grid-area: dos;
     /*border: solid red;*/
-    top: 120px;
+    bottom: 300px;
 }
 .ubicacion{
     position: relative;
